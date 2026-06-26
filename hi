@@ -1,0 +1,7 @@
+docker run -d \
+  --name dogehub \
+  --restart unless-stopped \
+  --network host \
+  -e NODE_ENV=production \
+  -e PORT=3000 \
+  ghcr.io/dogenetwork/dogehub:latest
